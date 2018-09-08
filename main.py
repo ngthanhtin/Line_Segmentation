@@ -19,7 +19,7 @@ def line_segment(img, output_path):
     
 if __name__ == "__main__":
     # read image
-    img = cv2.imread("test/Line_1.jpg")
+    img = cv2.imread("test/7.jpg")
 
     #do program
     output_path = "result"
