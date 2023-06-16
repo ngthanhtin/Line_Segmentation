@@ -2,7 +2,7 @@
 
 - [x] Line Segmentation Based on Bi-variate Gauss Statistic and Distance Metric
 - [x] Line Segmentation Based on A* algorithm
-- [ ] Handwritten Recognition ([developing]([developing](https://github.com/ai-forever/StackMix-OCR)))
+- [ ] Handwritten Recognition (![developing]([developing](https://github.com/ai-forever/StackMix-OCR)))
 - [ ] Demo (now you can run my python program to test your image)
 - Test Image
 <img src="test/7.jpg">
