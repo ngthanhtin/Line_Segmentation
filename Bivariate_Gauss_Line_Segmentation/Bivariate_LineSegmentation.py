@@ -120,8 +120,9 @@ class LineSegmentation:
 
     def find_contours(self):
         thresh_clone = self.thresh.copy()
+    
         contours = 0
-        ret, contours, hierachy = cv2.findContours(image=thresh_clone, mode=cv2.RETR_LIST, method=cv2.CHAIN_APPROX_NONE, offset=(0,0))
+        contours,hierachy = cv2.findContours(image=thresh_clone, mode=cv2.RETR_LIST, method=cv2.CHAIN_APPROX_NONE, offset=(0,0))
 
         bounding_rect = []
         for c in contours:
