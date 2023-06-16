@@ -1,4 +1,5 @@
-from LineSegmentation import LineSegmentation
+# %%
+from Bivariate_LineSegmentation import LineSegmentation
 import cv2
 def line_segment(img, output_path):
     """
@@ -6,8 +7,8 @@ def line_segment(img, output_path):
     output_path: output folder of segmented images. 
     :return: output image pathes
     """
-    cv2.imshow("Original", img)
-    cv2.waitKey()
+    # cv2.imshow("Original", img)
+    # cv2.waitKey()
     # (1) Segment Lines
     line_segmentation = LineSegmentation(img=img, output_path=output_path)
     lines = line_segmentation.segment()
@@ -16,14 +17,16 @@ def line_segment(img, output_path):
 
     return output_image_path
     
-    
-if __name__ == "__main__":
-    # read image
-    img = cv2.imread("test/7.jpg")
+# %%
+img = cv2.imread("../test/7.jpg")
+img.shape
 
-    #do program
-    output_path = "result"
-    r =line_segment(img, output_path)
-    print(r)
+# %%
+#do program
+output_path = "result"
+r =line_segment(img, output_path)
+print(r)
 
 
+
+# %%
