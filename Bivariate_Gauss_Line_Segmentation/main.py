@@ -19,7 +19,7 @@ def line_segment(img, output_path):
     return output_image_path
     
 # %%
-img = cv2.imread("../test/7.jpg")
+img = cv2.imread("../test/1.jpeg")
 img.shape
 
 # %%

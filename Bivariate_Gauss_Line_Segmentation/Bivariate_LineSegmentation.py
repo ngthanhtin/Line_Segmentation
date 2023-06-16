@@ -253,7 +253,6 @@ class LineSegmentation:
         # Add first region
         r = Region(top=Line(), bottom=self.initial_lines[0])
 
-        # r.update_region(self.thresh, 0)
         r.update_region(self.gray_img, 0)
         self.initial_lines[0].above = r
         self.lines_region.append(r)
@@ -262,15 +261,11 @@ class LineSegmentation:
             self.avg_line_height += r.height
 
         # Add rest of regions.
-        for i in range(len(self.initial_lines)):
+        for i in range(len(self.initial_lines)-1):
             top_line = self.initial_lines[i]
-            if i + 1 < len(self.initial_lines):
-                bottom_line = self.initial_lines[i + 1]
-            else:
-                bottom_line = Line()
+            bottom_line = self.initial_lines[i + 1]
             # Assign lines to region.
             r = Region(top_line, bottom_line)
-            # res = r.update_region(self.thresh, i)
             res = r.update_region(self.gray_img, i)
             # Assign regions to lines
             if top_line.initial_valley_id != -1:
@@ -278,7 +273,7 @@ class LineSegmentation:
 
             if bottom_line.initial_valley_id != -1:
                 bottom_line.above = r
-            if res is False:
+            if res:
                 self.lines_region.append(r)
                 if (r.height < self.predicted_line_height * 2.5):
                     self.avg_line_height += r.height
@@ -488,9 +483,10 @@ class LineSegmentation:
         self.get_initial_lines()
 
         self.save_image_with_lines(self.output_path + "/Initial_Lines.jpg")
-
+        
         # Get initial line regions
         self.generate_regions()
+        
         # repeair all initial lines and generate the final line region
         self.repair_lines()
         # Generate the final line regions

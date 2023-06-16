@@ -51,7 +51,6 @@ class Region():
         start = int(min(min_region_row, max_region_row))
         end = int(max(min_region_row, max_region_row))
 
-        print((start, end))
         self.region = np.ones((end - start, gray_image.shape[1]), dtype=np.uint8) * 255
 
         # Fill region.
@@ -77,7 +76,8 @@ class Region():
         self.calculate_mean()
         self.calculate_covariance()
 
-        return cv2.countNonZero(self.region) == (self.region.shape[0] * self.region.shape[1])
+        return True
+        # return cv2.countNonZero(self.region) == (self.region.shape[0] * self.region.shape[1])
 
     def calculate_mean(self):
         self.mean[0][0] = 0.0
