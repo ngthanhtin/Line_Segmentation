@@ -1,6 +1,7 @@
 # %%
 from Bivariate_LineSegmentation import LineSegmentation
-import cv2
+import cv2, os
+
 def line_segment(img, output_path):
     """
     img: image needed to segment to lines.
@@ -24,6 +25,9 @@ img.shape
 # %%
 #do program
 output_path = "result"
+if not os.path.isdir(output_path):
+    os.makedirs(output_path)
+# %%
 r =line_segment(img, output_path)
 print(r)
 

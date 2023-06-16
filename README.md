@@ -2,20 +2,16 @@
 
 - [x] Line Segmentation Based on Bi-variate Gauss Statistic and Distance Metric
 - [x] Line Segmentation Based on A* algorithm
-- [ ] Handwritten Recognition
-- [ ] Demo
+- [ ] Handwritten Recognition (developing)
+- [ ] Demo (now you can run my python program to test your image)
 - Test Image
 <img src="test/7.jpg">
 - After segmenting:
-  + Line 1:
-<img src="result/Line_0.jpg">
-  + Line 2:
-<img src="result/Line_1.jpg">
-  + Line 3:
-<img src="result/Line_2.jpg">
-  + Line 4:
-<img src="result/Line_3.jpg">
-  + Line 5:
-<img src="result/Line_4.jpg">
-  + Line 6:
-<img src="result/Line_5.jpg">
+  + Bivariate Gauss:
+<img src="Bivariate_Gauss_Line_Segmentation/result/bivariate_output.jpg">
+  + AStar Algorithm:
+<img src="A_Star_Line_Segmentation/astar_output.png">
+
+
+
+  

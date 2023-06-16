@@ -450,13 +450,14 @@ class LineSegmentation:
 
                 last_row = point[0]
 
-        # cv2.imwrite(path, img_clone)
+        cv2.imwrite(path, img_clone)
 
     def save_lines_to_file(self, lines):
         """
         lines: list contains multiple images as numpy arrays
         Return pathes containing various output image pathes
         """
+        
         output_image_path = []
         idx = 0
         if len(self.initial_lines) == 0:
@@ -496,6 +497,6 @@ class LineSegmentation:
         self.generate_regions()
 
         # save image drawn lines
-        self.save_image_with_lines(self.output_path + "/Final_Lines.bmp")
+        self.save_image_with_lines(self.output_path + "/bivariate_output.jpg")
 
         return self.get_regions()
