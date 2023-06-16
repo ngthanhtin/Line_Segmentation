@@ -1,5 +1,9 @@
 # Line_Segmentation
-Line Segmentation Based on Bi-variate Gauss Statistic and Distance Metric
+
+- [x] Line Segmentation Based on Bi-variate Gauss Statistic and Distance Metric
+- [x] Line Segmentation Based on A* algorithm
+- [ ] Handwritten Recognition
+- [ ] Demo
 - Test Image
 <img src="test/7.jpg">
 - After segmenting:
