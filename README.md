@@ -7,6 +7,7 @@
 - Test Image
 <img src="test/7.jpg">
 - After segmenting:
+
   + Bivariate Gauss:
 <img src="Bivariate_Gauss_Line_Segmentation/result/bivariate_output.jpg">
   + AStar Algorithm:
