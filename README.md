@@ -10,6 +10,7 @@
 
   + Bivariate Gauss:
 <img src="Bivariate_Gauss_Line_Segmentation/result/bivariate_output.jpg">
+
   + AStar Algorithm:
 <img src="A_Star_Line_Segmentation/astar_output.png">
 
