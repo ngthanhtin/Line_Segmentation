@@ -1,9 +1,11 @@
-# Line_Segmentation
-
+# Repo Description
 - [x] Line Segmentation Based on Bi-variate Gauss Statistic and Distance Metric
 - [x] Line Segmentation Based on A* algorithm
-- [ ] Handwritten Recognition [developing](https://github.com/ai-forever/StackMix-OCR)
+- [ ] Handwritten Word Recognition [developing]
+- [ ] Handwritten Sentence Recognition [developing](https://github.com/ai-forever/StackMix-OCR)
 - [ ] Demo (now you can run my python program to test your image)
+
+# Line_Segmentation 
 - Test Image
 <img src="test/7.jpg">
 - After segmenting:
@@ -14,6 +16,8 @@
   + AStar Algorithm:
 <img src="A_Star_Line_Segmentation/astar_output.png">
 
+# Handwritten Word Recognition
 
 
+# Handwritten Sentence Recognition
   
