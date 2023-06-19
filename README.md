@@ -21,3 +21,6 @@
 
 # Handwritten Sentence Recognition
   
+
+# Excellent Reference
+[trocr-base-handwritten-Microsoft](ohttps://huggingface.co/microsoft/trocr-base-handwritten)
